@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style/css.css">
+        <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+        <title>{{ page.title }} - {{ site.title }}</title>
+    </head>
+    <body>
+        <div class="container">
+            {% include header.html %}
+            <div class="main">
+                {{ content }}
+                <br />
+                {% include footer.html %}
+            </div>       
+        </div>   
+    </body>
+</html>
