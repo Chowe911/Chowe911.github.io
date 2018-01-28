@@ -8,14 +8,12 @@ title: 对不同的主机使用不同的公钥连接
 ```
 ssh-keygen -t rsa -b 4096 -C "<user@server>" -f ~/.ssh/<filename>
 ```
-
 将user@server和filename有意义的字符串。此时密钥对就会在指定路径生成。
 
 2. 将\<filename\>.pub 拷贝到远程主机上
 ```
 ssh-copy-id -i ~/.ssh/<filename>.pub <user@server>
 ```
-
 远程主机会要求你登录。
 
 3. 拷贝完成后，在~/.ssh/config作出如下配置：
