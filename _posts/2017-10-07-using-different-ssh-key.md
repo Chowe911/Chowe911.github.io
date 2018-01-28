@@ -17,6 +17,7 @@ ssh-copy-id -i ~/.ssh/<filename>.pub <user@server>
 远程主机会要求你登录。
 
 3. 拷贝完成后，在~/.ssh/config作出如下配置：
+
 ```
 host <alias name>
     user <your name>
