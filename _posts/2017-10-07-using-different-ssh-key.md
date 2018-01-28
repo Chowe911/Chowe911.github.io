@@ -19,10 +19,10 @@ ssh-copy-id -i ~/.ssh/<filename>.pub <user@server>
 3. 拷贝完成后，在~/.ssh/config作出如下配置：
 ```
 host <alias name>
-&nbsp;&nbsp;&nbsp;&nbsp;user <your name>
-&nbsp;&nbsp;&nbsp;&nbsp;hostname <server name>
-&nbsp;&nbsp;&nbsp;&nbsp;port <ssh port>
-&nbsp;&nbsp;&nbsp;&nbsp;identityfile ~/.ssh/<filename>
+    user <your name>
+    hostname <server name>
+    port <ssh port>
+    identityfile ~/.ssh/<filename>
 ```
 
 例如：
