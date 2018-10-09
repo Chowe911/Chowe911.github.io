@@ -11,7 +11,7 @@ layout: base
 * [Git for Windows](https://git-scm.com/downloads)
 * [Latern](https://github.com/getlantern/lantern)
 * [翻译](https://translate.google.cn)
-* [7z](https://sparanoid.com/lab/7z/)
+* [7z](https://www.7-zip.org/download.html)
 * [Foxmail](http://www.foxmail.com/)
 * [VLC](http://www.videolan.org/vlc/download-windows.html)
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
@@ -23,7 +23,6 @@ layout: base
 * [FastCopy](https://ipmsg.org/tools/fastcopy.html.en)
 * [Everything](https://www.voidtools.com/support/everything/)
 * [FDM](http://www.freedownloadmanager.org/landing5.htm)
-
 * [TeamViewer](https://www.teamviewer.com)
 * [XShell](https://www.netsarang.com/products/xsh_overview.html)
 * [Source Insight](https://www.sourceinsight.com)
