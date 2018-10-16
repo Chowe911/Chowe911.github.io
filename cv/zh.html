@@ -67,7 +67,34 @@
                 <ul class="info-list">
                     
                     <li>
-                        <label class="left-label">Tel</label><span class="label-value">+86xxxxx</span></li>
+                        <label class="left-label">Tel</label><span class="label-value">
+                            <Script language="javascript">
+                                function GetRequest() {
+                                    var url = location.search; //获取url中"?"符后的字串
+                                    var theRequest = new Object();
+                                    if (url.indexOf("?") != -1) {    //判断是否有参数
+                                        var str = url.substr(1);
+                                        if (str.indexOf("&") != -1) {
+                                            strs = str.split("&");
+                                            for (var i = 0; i < strs.length; i++) {
+                                                theRequest[strs[i].split("=")[0]] = strs[i].split("=")[1];
+                                            }
+                                        }
+                                        else {
+                                            theRequest[str.split("=")[0]] = str.split("=")[1];
+                                        }
+                                    }
+                                    return theRequest;
+                                }
+                                var arg=new Object();
+                                arg = GetRequest();
+                                var tel=arg['key'];
+                                if(tel == "86")
+                                    document.write("+8614714768147");
+                                else
+                                document.write("+86xxxxx");
+                                </Script>
+                        </span></li>
                     <li>
                         <label class="left-label">Blog</label><span class="label-value"><a href="http://chowe.one">chowe.one</a></span></li>
                     <li>
