@@ -10,12 +10,10 @@ layout: base
 $:su
 ```
 2. 更新sources.list
+```
 先安装apt-transport-https
-```
 #:apt-get install apt-transport-https
-```
 前往 https://mirrors.ustc.edu.cn/repogen/ 选择合适版本的sources.list，下载并替换/etc/apt/sources.list，然后
-```
 #:apt-get update
 #:apt-get upgrade
 ```
@@ -44,7 +42,9 @@ $:su
 #:apt-get install libtool
 ```
 9. 安装vm-tool
+```
 option
+```
 10. 添加ip信息/安装net-tools
 ```
 #:ip addr $IP/24 dev $IF
@@ -114,6 +114,9 @@ set hlsearch
 set ruler
 ```
 25. 配置bashrc
+```
+option
+```
 26. 配置python默认版本
 ```
 #:ln -s /usr/bin/python3 /usr/bin/python -f
