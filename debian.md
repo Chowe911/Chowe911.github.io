@@ -47,7 +47,7 @@ option
 ```
 10. 添加ip信息/安装net-tools
 ```
-#:ip addr $IP/24 dev $IF
+#:ip address add $IP/24 dev $IF
 ```
 11. 安装32位库/lib32ncurses5
 ```
