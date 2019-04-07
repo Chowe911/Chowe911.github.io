@@ -11,7 +11,7 @@
 <body>
     <div class="container" id="cv">
         <div class="side">
-            <br /><br /><br /><br />
+            <br /><br />
             <div class="me">
                 <div class="portrait"></div>
                 <div class="remodal remodal-img" data-remodal-id="portrait-modal">
@@ -72,7 +72,7 @@
                     <li>
                         <label class="left-label">Blog</label><span class="label-value"><a href="http://chowe.one">chowe.one</a></span></li>
                     <li>
-                        <label class="left-label">Email</label><span class="label-value"><a href="mailto:job@chowe.one">job@chowe.one</a></span></li>
+                        <label class="left-label">Email</label><span class="label-value"><a href="mailto:chowe911@msn.com">chowe911@msn.com</a></span></li>
                     <li>
                         <label class="left-label">GitHub</label><span class="label-value"><a href="https://github.com/Chowe911">github.com/Chowe911</a></span></li>
                 </ul>
@@ -186,6 +186,7 @@
                 <ul class="experience-list">
                     <li>
                         <h3>中控智慧－Linux系统开发工程师(2018.07-至今)</h3>
+                        <!--
                         <p>
                             负责已有平台的维护与功能增添，包括kernel、driver、library等。
                         </p>
@@ -204,6 +205,16 @@
                         <p>
                             负责系统平台文档的编写与维护。
                         </p>
+                        -->
+                        <p>参与Hisilicon平台开发，</p>
+                        <p>负责uboot阶段通过i2c读取eeprom数据用于配置机器启动参数的cmd，配置logo、io等任务；</p>
+                        <p>负责rtc、tp、rs485等外围设备驱动的移植与适配，并通过设备树管理板级硬件信息；</p>
+                        <p>负责MIPI LCD & RGB LCD的初始化工作；</p>
+                        <p>负责编写envsetup.sh调用Makefile来构建整个项目；</p>
+                        <p>负责init.d的初始化脚本的编写；</p>
+                        <p>负责dropbear等开源组件的移植；</p>
+                        <p>负责封装底层操作为api，供上层调用；</p>
+                        <p>实际业务与MPP System混合开发，合并Hisilicon的SDK更新；</p>
                     </li>
                     <li>
                         <h3>中控智慧－Linux软件开发实习生(2017.09-2018.04)</h3>
@@ -226,6 +237,13 @@
                             IDE+C++开发，涉及对电机、蓝牙等模块的开发。Android端获取Sensor数据并传给Arduino开发板，Arduino开发板根据收到的数据进行分析，根据分析结果驱动小车作出相应的动作。全程自动化工作，无需人为干预。荣获第十三届全国大学生嵌入式设计大赛东北赛区一等奖。
                         </p>
                     </li>
+                    <li>
+                        <h3>音乐闹钟</h3>
+                        <p>制作原料：树莓派3A+，有源音箱，继电器，USB母座，杜邦线</p>
+                        <p>制作过程：树莓派设定crontab计划任务，在设定的时间执行指定的脚本。在脚本中，树莓派通过控制gpio使继电器工作，使有源音箱工作；同时，调用sox顺序或随机播放本地音乐；为使音乐达到闹钟效果，首个音乐播放时音量从0到100缓慢递增。当时间来临时，如每天早上6：00，音乐就会缓缓的从卧室响起。</p>
+                        <p>不足之处：没有RTC，每次重启树莓派之后需要联网同步时间；没有在线音乐API，不能播放在线音乐。</p>
+                    </li>
+                    <!--
                     <li>
                         <h3>微信公众号</h3>
                         <p>
@@ -251,7 +269,7 @@
                             Studio下用C++实现出来（一部分），并将其托管在我个人的GitHub上。
                         </p>
                     </li>
-
+                    -->
                     <!--
                     <li>
                         <h3>基于C#的桌面程序</h3>
