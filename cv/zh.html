@@ -83,18 +83,18 @@
                 <hr>
                 <ul class="progress-list">
                     <li>
-                        <label class="left-label">Shell</label>
+                        <label class="left-label">C</label>
                         <label class="left-label">Git</label>
                         <!-- <progress value="80" max="100"></progress> -->
                     </li>
                     <li>
-                        <label class="left-label">C/C++</label>
+                        <label class="left-label">Shell</label>
                         <label class="left-label">Makefile</label>
                         <!-- <progress value="80" max="100"></progress> -->
                     </li>
                     <li>
                         <label class="left-label">UNIX/Linux</label>
-                        <label class="left-label">Device Tree</label>
+                        <!-- <label class="left-label">Device Tree</label> -->
                         <!-- <progress value="60" max="100"></progress> -->
                     </li>
                 </ul>
@@ -108,13 +108,16 @@
                             <label class="full-label">软件设计师（中级）</label>
                         </li>
                         <li>
+                            <label class="full-label">嵌入式系统设计师（中级）</label>
+                        </li>
+                        <li>
                             <label class="full-label">全国大学生嵌入式设计大赛<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;东北赛区一等奖（第十三届）</label>
                         </li>
                         <li>
-                            <label class="full-label">2018年度优秀员工</label>
+                            <!-- <label class="full-label">2018年度优秀员工</label> -->
                         </li>
                         <li>
-                            <label class="full-label">CET-4</label>
+                            <label class="full-label">英语4级</label>
                         </li>
                 </ul>
             </div>
@@ -223,7 +226,7 @@
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>Linux系统开发工程师(2018.07-至今)</h3>
+                        <h3>嵌入式Linux系统开发工程师(2018.07-至今)</h3>
                         <!--
                         <p>
                             负责已有平台的维护与功能增添，包括kernel、driver、library等。
@@ -244,17 +247,24 @@
                             负责系统平台文档的编写与维护。
                         </p>
                         -->
-                        <h4>工作内容</h4>
-                        <p>
+                        <!-- <h4>工作内容</h4> -->
+                        <!-- <p>
                                 在某嵌入式生物识别设备公司，主要负责开发适用于公司嵌入式设备的Linux OS，基于Hisilicon平台开发。日常工作内容负责在uboot阶段通过i2c读取eeprom数据用于配置机器启动参数；在uboot阶段通过读取MIPI ID来区分不同的MIPI LCD，加载不同初始化代码点亮屏幕并加载logo；移植与适配Wiegand、RTC、RS485、WiFi、TouchPanel等外围设备驱动到目标平台，并通过设备树管理板级硬件信息；构建类似于AOSP的编译环境来编译项目；编写文件系统中的rcS、inittab等初始化脚本；负责dropbear、libz等开源组件的移植，并增加ssh多次密码登录错误时锁定账户等功能；责封装底层操作为api，供上层调用；实际业务与MPP System混合开发，合并Hisilicon的SDK更新；通过裁剪uboot、kernel，优化系统启动速度，从上电到shell登录小于2秒。
                         </p>
                         <p>同时，负责分析和解决稳定性测试和回归测试表现出来的问题，如死机、文件系统受损等。</p>
                         <h4>工作感悟</h4>
                         <p>
-                            大致了解uboot环境变量，知道uboot如何引导内核和传递内核参数；了解驱动加载的过程，并通过传递参数的方式来控制驱动的某些行为；明白LCD需要复位、配置寄存器等操作才能被点亮；通过envsetup.sh游刃有余地控制整个项目、通过开机脚本控制机器自启动的服务等等；在开发和调试过程中，熟练使用示波器等工具进行分析、排查问题，并通过shell脚本来完成一些重复的动作。熟悉uboot和kernel的启动流程。Coding只是为了实现目的，而更重要的是为什么要这么做。<!--For what才是根本原因-->
+                            大致了解uboot环境变量，知道uboot如何引导内核和传递内核参数；了解驱动加载的过程，并通过传递参数的方式来控制驱动的某些行为；明白LCD需要复位、配置寄存器等操作才能被点亮；通过envsetup.sh游刃有余地控制整个项目、通过开机脚本控制机器自启动的服务等等；在开发和调试过程中，熟练使用示波器等工具进行分析、排查问题，并通过shell脚本来完成一些重复的动作。熟悉uboot和kernel的启动流程。Coding只是为了实现目的，而更重要的是为什么要这么做。For what才是根本原因
                         </p>
                         <h4>工作成果</h4>
-                        <p>从立项到首款产品问世历时8个月。基于该Linux OS的产品已经释出多款机型并且热卖，同时有更多的项目计划使用该平台。</p>
+                        <p>从立项到首款产品问世历时8个月。基于该Linux OS的产品已经释出多款机型并且热卖，同时有更多的项目计划使用该平台。</p> -->
+                        <p>在某嵌入式生物识别设备公司，主要负责开发适用于公司嵌入式设备的Linux OS，基于Hisilicon平台SDK二次开发，涉及：<br />
+                            0. 在uboot阶段通过i2c读取eeprom数据、初始化MIPI LCD及加载logo、通过寄存器操作GPIO、配置I/O复用、设置bootargs等；<br />
+                            1. 在kernel阶段优化kernel的启动速度，使得从上电到shell登录小于2秒，同时移植Wiegand、RTC、RS485、WiFi、TP等外围设备驱动，并通过设备树（dts）管理板级硬件信息；<br />
+                            2. 在rootfs阶段裁减busybox，修改init脚本，检查文件系统（ext4），构建initramfs（与kernel一起打包或独立initrd）或ext4 rootfs，移植udev、dropbear、openSSL等开源组件，初始化MPP VO以便UI（Framebuffer）启动；<br />
+                            3. 编写Makefile和shell脚本依次或指定编译uboot、kernel、busybox及其依赖组件，处理开源组件之间的编译依赖，生成唯一的版本信息以供跟踪；<br />
+                            4. 其他：熟悉使用和编写uboot cmd；了解设备驱动模型；熟悉使用示波器；能看懂原理图；
+                        </p>
                     </li>
                     <li>
                         <h3>Linux软件开发实习生(2017.09-2018.04)</h3>
