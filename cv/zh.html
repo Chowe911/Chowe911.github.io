@@ -226,7 +226,7 @@
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>嵌入式Linux系统开发工程师(2018.07-至今)</h3>
+                        <h3>嵌入式Linux系统开发工程师(2018.07-2020.04)</h3>
                         <!--
                         <p>
                             负责已有平台的维护与功能增添，包括kernel、driver、library等。
@@ -258,12 +258,12 @@
                         </p>
                         <h4>工作成果</h4>
                         <p>从立项到首款产品问世历时8个月。基于该Linux OS的产品已经释出多款机型并且热卖，同时有更多的项目计划使用该平台。</p> -->
-                        <p>在某嵌入式生物识别设备公司，主要负责开发适用于公司嵌入式设备的Linux OS，基于Hisilicon平台SDK二次开发，涉及：<br />
-                            0. 在uboot阶段通过i2c读取eeprom数据、初始化MIPI LCD及加载logo、通过寄存器操作GPIO、配置I/O复用、设置bootargs等；<br />
-                            1. 在kernel阶段优化kernel的启动速度，使得从上电到shell登录小于2秒，同时移植Wiegand、RTC、RS485、WiFi、TP等外围设备驱动，并通过设备树（dts）管理板级硬件信息；<br />
-                            2. 在rootfs阶段裁减busybox，修改init脚本，检查文件系统（ext4），构建initramfs（与kernel一起打包或独立initrd）或ext4 rootfs，移植udev、dropbear、openSSL等开源组件，初始化MPP VO以便UI（Framebuffer）启动；<br />
+                        <p>在某嵌入式生物识别设备公司，主要负责开发适用于公司嵌入式设备的Linux OS，基于海思3516平台SDK二次开发，涉及：<br />
+                            0. 在uboot阶段设置bootargs、通过i2c读取eeprom数据、读取LCD ID并根据不同的ID选择不同的参数来初始化MIPI LCD，根据不同的分辨率来加载不同的logo、通过寄存器操作GPIO用来复位LCD或者使能设备、根据主板选配的功能来配置I/O复用等；<br />
+                            1. 在kernel阶段通过裁减手段优化kernel的启动速度，使得从上电到shell登录小于2秒，同时移植Wiegand、RTC、RS485、WiFi、TP等外围设备驱动，并通过设备树（dts）管理板级硬件信息；<br />
+                            2. 在rootfs阶段裁减busybox，修改inittab、rcS、fstab等脚本，使用fsck检查并修复文件系统（ext4），构建initramfs（与kernel一起打包或独立initrd）或ext4 rootfs，移植udev、dropbear、openSSL等开源组件，初始化MPP VO以便UI （Framebuffer）启动；<br />
                             3. 编写Makefile和shell脚本依次或指定编译uboot、kernel、busybox及其依赖组件，处理开源组件之间的编译依赖，生成唯一的版本信息以供跟踪；<br />
-                            4. 其他：熟悉使用和编写uboot cmd；了解设备驱动模型；熟悉使用示波器；能看懂原理图；
+                            4. 其他：熟悉使用和编写uboot cmd；了解设备驱动模型；熟悉使用示波器；能看懂原理图；通过git进行版本控制及code review。
                         </p>
                     </li>
                     <li>
